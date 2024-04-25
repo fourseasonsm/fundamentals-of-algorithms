@@ -1,10 +1,8 @@
 from __future__ import annotations
-
 import collections
 from dataclasses import dataclass
 from typing import Any
 import yaml
-
 
 @dataclass
 #я не знаю в чем проблема и как это решить, но при использовании dataclass
@@ -83,7 +81,5 @@ if __name__ == "__main__":
         bt = BinaryTree()
         bt.root = build_tree(c["input"])
         a = c["input"]
-        print(a)
         zz_traversal = bt.zigzag_level_order_traversal(bt.root)
-        print(zz_traversal)
         print(f"Case #{i + 1}: {zz_traversal == c['output']}")
