@@ -29,7 +29,6 @@ if __name__ == "__main__":
             [6.0, 5.0, 3.0],
         ]
     )
-
     A = L @ L.T
     L = cholesky(A)
     print(L)
